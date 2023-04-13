@@ -43,5 +43,5 @@ def fig(city):
  #graphCHI = fig(dataCHI)
  graphHTX = fig(dataHTX)
  
- pio.write_html(graphHTX, file=’index.html’, auto_open=True)
+ pio.write_html(graphHTX, file="index.html", auto_open=True)
 
