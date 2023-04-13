@@ -38,10 +38,10 @@ def fig(city):
     fig.show()
     return
     
- graphNY = fig(dataNY)
- graphLA = fig(dataLA)
- graphCHI = fig(dataCHI)
- dataHTX = fig(dataHTX)
+ #graphNY = fig(dataNY)
+ #graphLA = fig(dataLA)
+ #graphCHI = fig(dataCHI)
+ graphHTX = fig(dataHTX)
  
- pio.write_html(dataHTX, file=’index.html’, auto_open=True)
+ pio.write_html(graph, file=’index.html’, auto_open=True)
 
