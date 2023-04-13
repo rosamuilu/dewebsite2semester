@@ -3,6 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 import numpy
+import plotly.io as pio
 
 #Open the file, but only the columns we're interested in to avoid dropping many columns
 surveillancedata = pd.read_csv('Data-analysis/AtlasofSurveillance-20230405.csv', usecols= ["City", "State", "Technology", "Type of Juris", "Summary"])
@@ -41,3 +42,6 @@ def fig(city):
  graphLA = fig(dataLA)
  graphCHI = fig(dataCHI)
  dataHTX = fig(dataHTX)
+ 
+ pio.write_html(dataHTX, file=’datahtx.html’, auto_open=True)
+
