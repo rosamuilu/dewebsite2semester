@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block unique_body %}
+<h1>What watches you in Chicago?</h1>
+<div class="bottomtext">Click on different categories to inspect them further. 
+    If you hover over a technology, it will give you more information about the technology and who uses it.
+</div>
+<div class="source">Data from <a href="https://atlasofsurveillance.org/"> Atlas of Surveillance</a>.</div>
+<br>
+<iframe title="Surveillance technologies used in Chicago" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://rosamuilu.github.io/chicagodata/" height="500px" width="100%"></iframe>
+<br>
+<h2>You are never alone. Even when you want to be.</h2>
+<br>
+<a href="https://www.stopspying.org/" class="button">S.T.O.P. Mass Surveillance</a>
+{% endblock %}

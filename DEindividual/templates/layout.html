@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>
+        the Panopticon
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='static/main.css'>
+</head>
+<body>
+    <!-- Navigation and topname -->
+    <div class = topbar>
+        <div class="nameofthewebsite"> 
+            <h6>the Panopticon</h6>
+        </div>
+        <div class="navigation">
+            <a href='/'>Home</a>
+            |
+            <a href='newyork.html'>New York</a>
+            |
+            <a href='losangeles.html'>Los Angeles</a>
+            |
+            <a href='chicago.html'>Chicago</a>
+            |
+            <a href='houston.html'>Houston</a>
+            |
+            <a href='about.html'>About the Panopticon</a>
+        </div>
+    </div>
+
+    <hr>
+
+    {% block unique_body %} {% endblock %}
+</body>
+</html>
